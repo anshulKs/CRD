@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https:ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<style>
+    table{
+    border: 1px solid black;
+    width: 40%;
+}
+.error{
+    border-color: red;
+}
+</style>
+</head>
+<body>
+  <form name="myform">
+      First Name:<br>
+      <input type="text" id="first_name-input" name="fname" pattern="[a-zA-Z]"><br>
+      Last Name:<br>
+      <input type="text" id="last_name-input" name="lname" pattern="[a-zA-Z]"><br>
+      E-mail:<br>
+      <input type="text" id="email-input" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" ><br>
+      Mobile Number:<br>
+      <input type="text" id="phoneno-input" name="phonenumber" pattern="[789][0-9]{10,}" ><br>
+      Password:<br>
+      <input type="password" id="pwd-input" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"><br>
+      Confirm-Password:<br>
+      <input type="password" id="confirm_pwd-input" name="confirm_password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"><br>
+      <br>
+      <button id="add-button" type="button">Add</button>
+      <br>
+  </form>
+  <br>
+  <div>
+  <table>
+    <tr>
+        <td><h4>First Name:</h4></td>
+        <td><h4>Last Name</h4></td>
+        <td><h4>E-mail:</h4></td>
+        <td><h4>Mobile Number:</h4></td>
+        <td><h4>Action:</h4></td>
+    </tr>
+  </table>
+</div>
+</body>
+<script src="CRD.js"></script>
+</html>
